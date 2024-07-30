@@ -61,6 +61,4 @@
 <!--        <session-timeout>30</session-timeout> &lt;!&ndash; Timeout in minutes &ndash;&gt;-->
 <!--    </session-config>-->
 
-
-
 </web-app>

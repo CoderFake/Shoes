@@ -50,14 +50,14 @@
         <script>
             function toggleResetPswd(e) {
                 e.preventDefault();
-                $('#logreg-forms .form-signin').toggle() // display:block or none
-                $('#logreg-forms .form-reset').toggle() // display:block or none
+                $('#logreg-forms .form-signin').toggle()
+                $('#logreg-forms .form-reset').toggle()
             }
 
             function toggleSignUp(e) {
                 e.preventDefault();
-                $('#logreg-forms .form-signin').toggle(); // display:block or none
-                $('#logreg-forms .form-signup').toggle(); // display:block or none
+                $('#logreg-forms .form-signin').toggle();
+                $('#logreg-forms .form-signup').toggle();
             }
 
             $(() => {
