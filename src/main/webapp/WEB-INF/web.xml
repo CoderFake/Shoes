@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>ShoesStore</display-name>
+
+    <welcome-file-list>
+        <welcome-file>Home.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>CategoryControl</servlet-name>
+        <servlet-class>com.ShoesStore.control.CategoryControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryControl</servlet-name>
+        <url-pattern>/category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DetailControl</servlet-name>
+        <servlet-class>com.ShoesStore.control.DetailControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailControl</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HomeControl</servlet-name>
+        <servlet-class>com.ShoesStore.control.HomeControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeControl</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchControl</servlet-name>
+        <servlet-class>com.ShoesStore.control.SearchControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchControl</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginControl</servlet-name>
+        <servlet-class>com.ShoesStore.control.LoginControl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginControl</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+<!--    <session-config>-->
+<!--        <session-timeout>30</session-timeout> &lt;!&ndash; Timeout in minutes &ndash;&gt;-->
+<!--    </session-config>-->
+
+
+
+</web-app>
